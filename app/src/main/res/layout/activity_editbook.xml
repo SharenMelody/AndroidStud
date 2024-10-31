@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login2"
+    tools:context=".AddActivity">
+
+    <TextView
+        android:id="@+id/judulEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Book"
+        android:textStyle="bold"
+        android:textSize="29dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_below="@+id/judulEdit"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="25dp">
+
+        <ImageView
+            android:id="@+id/editPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/baseline_image_24"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/noteEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note : Image Harus diisi!"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_below="@+id/cardView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"/>
+
+    <EditText
+        android:id="@+id/editNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Nama"
+        android:layout_below="@+id/noteEdit"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:padding="20dp"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:id="@+id/editNP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Nama Panggilan"
+        android:layout_below="@+id/editNama"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:padding="20dp"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Email"
+        android:layout_below="@+id/editNP"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:padding="20dp"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:id="@+id/editAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Alamat"
+        android:layout_below="@+id/editEmail"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:padding="20dp"
+        android:drawableStart="@drawable/baseline_location_on_24"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:id="@+id/editTglLahir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Tanggal Lahir"
+        android:layout_below="@+id/editAlamat"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:padding="20dp"
+        android:drawableStart="@drawable/baseline_date_range_24"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:id="@+id/editHP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="No HP"
+        android:layout_below="@+id/editTglLahir"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:padding="20dp"
+        android:drawableStart="@drawable/baseline_phone_24"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/doneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/baseline_done_24"
+        android:tint="@color/white"
+        android:backgroundTint="@color/blue"/>
+
+
+</RelativeLayout>

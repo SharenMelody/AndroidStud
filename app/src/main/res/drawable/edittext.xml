@@ -1,0 +1,20 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shadow layer -->
+    <item>
+        <shape>
+            <solid android:color="#66000000" /> <!-- Warna shadow dengan transparansi -->
+            <corners android:radius="8dp" /> <!-- Radius sudut shadow -->
+        </shape>
+    </item>
+
+    <!-- Border layer -->
+    <item android:left="2dp" android:right="2dp" android:top="2dp" android:bottom="2dp">
+        <shape>
+            <solid android:color="@android:color/white" /> <!-- Warna latar belakang -->
+            <stroke
+                android:width="2dp"
+                android:color="@color/blue" /> <!-- Warna dan ketebalan border -->
+            <corners android:radius="8dp" /> <!-- Radius sudut border -->
+        </shape>
+    </item>
+</layer-list>
